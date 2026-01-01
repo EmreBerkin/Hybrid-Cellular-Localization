@@ -12,7 +12,6 @@ In this project, time-dependent RSRP, RSRQ, and SINR measurements of a mobile us
 To handle irregular time steps and abrupt variations in the signal measurements, Hybrid Particle Filter (PF) and Hybrid Unscented Kalman Filter (UKF) structures were employed. These hybrid filters improve robustness by adapting the prediction and update stages to nonuniform temporal sampling.
 
 ### Machine Learning Model Training
-
 Following the filtering stage, the collected signal measurements were divided into training and testing sets, where 70% of the data was used for training the machine learning models. The training set was used to fit the following four regression-based models:
 
 * Random Forest Regressor
@@ -20,23 +19,23 @@ Following the filtering stage, the collected signal measurements were divided in
 * XGBoost Regressor
 * Gradient Boosting Regressor
 
-\renewcommand{\arraystretch}{1.3}
-\begin{table}[h]
-\centering
-\small
-\begin{tabular}{|l|c|c|}
-\hline
-\textbf{Regression Model} & \textbf{Train $R^2$} & \textbf{Test $R^2$} \\ \hline
-Random Forest Regressor     & 0.8049 & 0.7317 \\ \hline
-Decision Tree Regressor     & 0.8619 & 0.6667 \\ \hline
-Gradient Boosting Regressor & 0.9481 & 0.7139 \\ \hline
-XGBoost Regressor           & 0.9377 & 0.7479 \\ \hline
-\end{tabular}
-\\[6pt]
-\caption{Comparison of regression models based on training and test set $R^2$ performance.}
-\label{tab:r2_models}
-\end{table}
+### Regression Model Performance (R²)
+| Regression Model             | Train R² | Test R² |
+|------------------------------|----------|---------|
+| Random Forest Regressor      | 0.8049   | 0.7317  |
+| Decision Tree Regressor      | 0.8619   | 0.6667  |
+| Gradient Boosting Regressor  | 0.9481   | 0.7139  |
+| XGBoost Regressor            | 0.9377   | 0.7479  |
 
 ### Model Evaluation and Selection
-
 The trained models were evaluated based on their coefficient of determination $R^2$ scores, as well as qualitative analyses of overfitting and underfitting behaviors. Based on these evaluation criteria, the most optimal model for mobile user localization was selected and integrated into the hybrid localization framework.
+
+### Error Performance Result
+<img width="640" height="480" alt="karsilastirma" src="https://github.com/user-attachments/assets/8e1c3313-7cbd-4d98-b00b-77143e89b137" />
+As can be seen in this figure, different filtering techniques achieves different error performance. So we used hybrid filter algorithms to identify which is most desirable.
+ 
+
+
+
+
+
