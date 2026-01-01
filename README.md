@@ -20,6 +20,23 @@ Following the filtering stage, the collected signal measurements were divided in
 * XGBoost Regressor
 * Gradient Boosting Regressor
 
+\renewcommand{\arraystretch}{1.3}
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Regression Model} & \textbf{Train $R^2$} & \textbf{Test $R^2$} \\ \hline
+Random Forest Regressor     & 0.8049 & 0.7317 \\ \hline
+Decision Tree Regressor     & 0.8619 & 0.6667 \\ \hline
+Gradient Boosting Regressor & 0.9481 & 0.7139 \\ \hline
+XGBoost Regressor           & 0.9377 & 0.7479 \\ \hline
+\end{tabular}
+\\[6pt]
+\caption{Comparison of regression models based on training and test set $R^2$ performance.}
+\label{tab:r2_models}
+\end{table}
+
 ### Model Evaluation and Selection
 
 The trained models were evaluated based on their coefficient of determination $R^2$ scores, as well as qualitative analyses of overfitting and underfitting behaviors. Based on these evaluation criteria, the most optimal model for mobile user localization was selected and integrated into the hybrid localization framework.
