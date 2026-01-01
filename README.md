@@ -19,3 +19,7 @@ Following the filtering stage, the collected signal measurements were divided in
 * Decision Tree Regressor
 * XGBoost Regressor
 * Gradient Boosting Regressor
+
+### Model Evaluation and Selection
+
+The trained models were evaluated based on their coefficient of determination $R^2$ scores, as well as qualitative analyses of overfitting and underfitting behaviors. Based on these evaluation criteria, the most optimal model for mobile user localization was selected and integrated into the hybrid localization framework.
