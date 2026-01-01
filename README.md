@@ -5,7 +5,7 @@ A high-precision hybrid localization system that integrates Machine Learning (ML
 ### Abstract
 Traditional GPS-based positioning systems can experience problems in enclosed spaces, tunnels, or dense urban environments due to signal interruptions, path loss, and environmental factors. Furthermore, GPS systems are not energy efficient and consume a lot of energy. This study aims to achieve location estimation with high accuracy and lower energy consumption, even in environments without GPS access, using the existing GSM infrastructure.
 
-###Data Acquisition and Sampling
+### Data Acquisition and Sampling
 In this project, time-dependent RSRP, RSRQ, and SINR measurements of a mobile user were collected using a nonuniform sampling scheme, where measurements are not obtained at equal time intervals. Due to the nonuniform nature of the sampling process, hybrid filtering techniques were preferred in order to ensure stable and reliable tracking performance.
 
 ### Hybrid Filtering Approach
