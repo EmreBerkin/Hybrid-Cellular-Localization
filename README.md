@@ -31,7 +31,7 @@ Following the filtering stage, the collected signal measurements were divided in
 The trained models were evaluated based on their coefficient of determination $R^2$ scores, as well as qualitative analyses of overfitting and underfitting behaviors. Based on these evaluation criteria, the most optimal model for mobile user localization was selected and integrated into the hybrid localization framework.
 
 ### Error Performance Result
-<img width="640" height="480" alt="karsilastirma" src="https://github.com/user-attachments/assets/8e1c3313-7cbd-4d98-b00b-77143e89b137" />
+<img width="640" height="480" alt="karsilastirma" src="https://github.com/user-attachments/assets/8e1c3313-7cbd-4d98-b00b-77143e89b137">
 As can be seen in this figure, different filtering techniques achieves different error performance. So we used hybrid filter algorithms to identify which is most desirable.
  
 
